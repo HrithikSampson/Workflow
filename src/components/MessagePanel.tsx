@@ -1,8 +1,16 @@
+"use client"
 import styles from "@/components/MessagePanel.module.css"
+import { useCallback } from "react";
 const MessagePanel = () => {
+    const onDrag = useCallback((event: React.DragEvent<HTMLDivElement>) => {
+        event.preventDefault();
+        event.stopPropagation();
+        console.log("drag");
+        event.dataTransfer.dropEffect = 'move';
+    }, []);
   return (
     <div className={styles.container}>
-        <div className={styles.messageContainer}>
+        <div className={styles.messageContainer} draggable onDragOver={onDrag}>
             {/* Chat image creation */}
             <div className={styles.messageBox}>
                 <p>___</p>
