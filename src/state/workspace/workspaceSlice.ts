@@ -24,7 +24,12 @@ const initialNode: NodeType = {
 const workflowSlice = createSlice({
     name: "workflow",
     initialState,
-    reducers: {}
-});
+    reducers: {
+        workflowSave: (state) => {
 
+        },
+
+    }
+});
+export const {workflowSave} = workflowSlice.actions;
 export default workflowSlice.reducer;

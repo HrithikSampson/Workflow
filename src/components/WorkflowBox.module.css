@@ -1,0 +1,19 @@
+.workflowHeader{
+    color: black;
+    font-weight: bold;
+    display: inline;
+    white-space: nowrap;
+}
+.workflowContainer{
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: gray;
+    visibility: visible;
+}
+.workHeader{
+    width: auto;
+    height: auto;
+    text-overflow:ellipsis;
+    background-color: lightgreen;
+}

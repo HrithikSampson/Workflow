@@ -8,9 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-main{
-  position: relative;
-}
 body {
   color: rgb(var(--foreground-rgb));
 }
