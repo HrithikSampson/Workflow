@@ -34,3 +34,47 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+.container {
+  position: relative;
+  width: fit-content;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 200px;
+  border-width: 1px;
+  border-color: black;
+}
+.header {
+  display: flex;
+  background-color: lightgreen;
+  width: auto;
+  padding: 5px;
+  flex-direction: row;
+}
+
+.image {
+  display: inline;
+}
+.headerText {
+  display: inline;
+  text-align: center;
+  margin: 0px 0px 5px 5px;
+  font-weight: 600;
+}
+.content {
+  padding: 5px;
+}
+
+export default function App() {
+  return (
+    <div className="container">
+      <div className="header">
+        <img className="image" alt="" width={20} height={20} />
+        <div className="headerText">Send Message</div>
+      </div>
+      <div className="content">Content</div>
+    </div>
+  );
+}
