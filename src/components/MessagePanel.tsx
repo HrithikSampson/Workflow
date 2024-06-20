@@ -11,7 +11,6 @@ const MessagePanel = () => {
   const onDrag = useCallback((event: React.DragEvent<HTMLDivElement>) => {
     event.preventDefault();
     event.stopPropagation();
-    console.log("drag");
     event.dataTransfer.dropEffect = "move";
   }, []);
   return selectedNodeId === null ? (

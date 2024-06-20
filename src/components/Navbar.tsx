@@ -15,7 +15,7 @@ const Navbar = () => {
     state.edges.map((egs) => {
       set.add(egs.target);
     });
-    if (set.size == state.nodes.length - 1 || state.nodes.length <= 1) {
+    if (set.size == state.nodes.length - 1 && state.nodes.length > 1) {
       dispatch(workflowSave());
     } else {
       setShowError(true);

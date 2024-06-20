@@ -16,6 +16,8 @@ const SettingsPanel = () => {
     },
     [],
   );
+  const value = useSelector((state:RootState)=>state.workflow
+  .currentWorkspace.nodes.find((nds)=>(nds.id===state.workflow.selectedNodeId))?.data.text);
   const onClick = useCallback(() => {
     dispatch(selectNode(null));
   }, []);
@@ -37,6 +39,7 @@ const SettingsPanel = () => {
           rows={15}
           cols={30}
           className={styles.textArea}
+          value={value}
           onChange={onChange}
         ></textarea>
       </div>
