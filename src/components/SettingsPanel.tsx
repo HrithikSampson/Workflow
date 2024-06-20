@@ -16,8 +16,12 @@ const SettingsPanel = () => {
     },
     [],
   );
-  const value = useSelector((state:RootState)=>state.workflow
-  .currentWorkspace.nodes.find((nds)=>(nds.id===state.workflow.selectedNodeId))?.data.text);
+  const value = useSelector(
+    (state: RootState) =>
+      state.workflow.currentWorkspace.nodes.find(
+        (nds) => nds.id === state.workflow.selectedNodeId,
+      )?.data.text,
+  );
   const onClick = useCallback(() => {
     dispatch(selectNode(null));
   }, []);
