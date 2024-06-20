@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <main>
       <div>
-        <Workspace/>
-        <MessagePanel/>
+        <Workspace />
+        <MessagePanel />
       </div>
     </main>
   );
