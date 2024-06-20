@@ -22,7 +22,7 @@ const WorkflowBox = ({
         <div className={styles.header}>
           <Image src="/chat-bubble.svg" alt="" width={20} height={20} />
           <div className={styles.headerText}>
-            {content == "" ? "Send Message" : content}
+            {content}
           </div>
         </div>
         <div className={styles.content}>{text == "" ? "Message" : text}</div>
